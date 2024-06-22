@@ -1,11 +1,17 @@
 package com.driver.model;
 
-import java.util.List;
+import lombok.Builder;
 
+import java.util.List;
+import java.util.Set;
+
+@Builder
 public class Hotel {
+
 
     private String hotelName; //This will be the primary key and will be unique for each hotel in hotelDb
     private int availableRooms;
+
 
     private List<Facility> facilities;
 
@@ -49,4 +55,5 @@ public class Hotel {
     public void setPricePerNight(int pricePerNight) {
         this.pricePerNight = pricePerNight;
     }
+
 }

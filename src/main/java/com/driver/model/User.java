@@ -1,5 +1,8 @@
 package com.driver.model;
 
+import lombok.Builder;
+
+@Builder
 public class User {
 
     private int aadharCardNo; //This is the unique key that determines a unique user

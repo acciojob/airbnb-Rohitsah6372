@@ -1,5 +1,8 @@
 package com.driver.model;
 
+import lombok.Builder;
+
+@Builder
 public class Booking {
 
     private String bookingId; //This will be a random UUID generated String
